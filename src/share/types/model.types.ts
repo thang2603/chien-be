@@ -9,4 +9,5 @@ export interface Model {
   scale: Transform;
   color: string;
   description: string;
+  title: string;
 }

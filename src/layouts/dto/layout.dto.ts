@@ -13,6 +13,7 @@ export class ModelDto {
   scale: TransformDto;
   color: string;
   description: string;
+  title: string;
 }
 
 export class CreateLayoutDto {

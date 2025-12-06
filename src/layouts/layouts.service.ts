@@ -15,7 +15,7 @@ export class LayoutsService {
   }
 
   async findAll(): Promise<Layout[]> {
-    return this.layoutModel.find().exec();
+    return this.layoutModel.find({}, { _id: 0, id: 1, name: 1 }).lean();
   }
 
   async findOne(id: string): Promise<Layout> {

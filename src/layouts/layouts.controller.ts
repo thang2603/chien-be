@@ -10,7 +10,7 @@ import {
 import { LayoutsService } from './layouts.service';
 import { CreateLayoutDto, UpdateLayoutDto } from './dto/layout.dto';
 
-@Controller('layouts')
+@Controller('api/layouts')
 export class LayoutsController {
   constructor(private readonly layoutService: LayoutsService) {}
 
